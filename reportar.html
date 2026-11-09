@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate - Sistema de Rescate</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+        <p>Protegiendo y ayudando a los animales que necesitan rescate.</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar un rescate</a></li>
+                <li><a href="rescates.html">Ver rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de Registro de Rescate</h2>
+            <p>Complete los siguientes datos para reportar un animal en situación de calle o peligro.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Información del Animal y Ubicación</legend>
+                    
+                    <p>
+                        <label for="tipo">Tipo de animal:</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">-- Seleccione una opción --</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="ubicacion">Ubicación del hallazgo:</label>
+                        <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Av. Principal y Calle 10" required>
+                    </p>
+
+                    <p>
+                        <label for="fecha">Fecha del reporte:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+
+                    <p>
+                        <label for="descripcion">Descripción de la condición:</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="4" cols="40" placeholder="Describa el estado del animal..." required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos del Reportante</legend>
+                    
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="0991234567" required>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar Reporte</button>
+                    <button type="reset">Limpiar Campos</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sistema de Control de Rescate y Adopción Animal.</p>
+        <p>Proyecto práctico - Unidad 2.</p>
+    </footer>
+</body>
+</html>
